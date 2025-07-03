@@ -106,7 +106,7 @@ CUDA Implementation
 
 - <details>
   <summary>
-  **load-balanced boundary updates using cyclic thread assignment**
+  <strong>load-balanced boundary updates using cyclic thread assignment</strong>
   </summary>
 
   GPU threads are naturally 2D-indexed, but boundary updates (in `updateBoundaryNSKernel()` and `updateBoundaryEWKernel()`) operate in 1D. To better utilize threads, we map 2D thread indices to a 1D index and assign boundary updates cyclically across threads.
