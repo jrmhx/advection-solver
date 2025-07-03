@@ -1,5 +1,3 @@
-# Makefile for COMP4300/8300 Assignment 2 (OpenMP)
-# Peter Strazdins, SOCO ANU, Apr 21     
 .SUFFIXES:
 .PRECIOUS: %.o
 
