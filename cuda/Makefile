@@ -1,5 +1,3 @@
-# Makefile for COMP4300/8300 Assignment 2
-# Peter Strazdins, SOCO ANU, 14 Apr 21 
 .SUFFIXES:
 .PRECIOUS: %.o
 
