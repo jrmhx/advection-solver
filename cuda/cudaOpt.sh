@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# CUDA Grid/Block Configuration Performance Test
+# Tests all combinations of grid (Gx,Gy) and block (Bx,By) dimensions
+# where total threads = Gx * Gy * Bx * By = 1024
+# Purpose: Find optimal GPU thread configuration for 4096x4096 problem size
+
 # Set the problem size (M and N) and radius (r)
 M=4096
 N=4096

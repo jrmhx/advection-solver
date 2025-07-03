@@ -1,4 +1,7 @@
 #!/bin/bash
+# OpenMP 2D Block Distribution Performance Test
+# Tests different P values for P×Q thread block distribution with 48 total threads
+# Purpose: Evaluate scalability of 2D domain decomposition on HPC cluster
 #PBS -q express
 #PBS -j oe
 #PBS -l walltime=00:01:00,mem=32GB

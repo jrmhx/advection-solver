@@ -1,4 +1,10 @@
 #!/bin/bash
+# OpenMP Optimization Flag Performance Test
+# Compares performance with and without -x optimization flag
+# Uses NUMA control for thread counts ≤24 (single socket)
+# Tests two scenarios:
+#   1. Standard OpenMP parallelization (no -x flag)
+#   2. Optimized OpenMP parallelization (with -x flag)
 #PBS -q express
 #PBS -j oe
 #PBS -l walltime=00:01:00,mem=32GB

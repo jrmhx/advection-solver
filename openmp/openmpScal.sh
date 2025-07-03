@@ -1,4 +1,10 @@
 #!/bin/bash
+# OpenMP Parallelization Strategy Comparison Test
+# Compares 1D vs 2D domain decomposition performance on HPC cluster
+# Tests three scenarios:
+#   1D: Standard OpenMP parallelization with varying thread counts
+#   2D_1: Fixed P=4 block distribution with varying thread counts  
+#   2D_2: Fixed 48 threads with varying P values (P×Q distribution)
 #PBS -q express
 #PBS -j oe
 #PBS -l walltime=00:01:00,mem=32GB
