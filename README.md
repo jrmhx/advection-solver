@@ -21,7 +21,7 @@ The following images demonstrate the advection simulation in action:
   </table>
 </div>
 
-This repository provides an implementation of an Advection Solver optimized for shared memory parallel programming models using OpenMP and CUDA. The goal is to facilitate understanding and experimenting with parallelization strategies on SMP (Symmetric Multiprocessing) and GPU architectures.
+This repository provides an implementation of an advection solver optimized for shared memory parallel programming models using OpenMP and CUDA. The goal is to facilitate understanding and experimenting with parallelization strategies on SMP (Symmetric Multiprocessing) and GPU architectures.
 
 ## Objectives
 
