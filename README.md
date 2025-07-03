@@ -104,7 +104,10 @@ OpenMP Implementation
 
 CUDA Implementation
 
-- <details>
+- static grid and block size tuning
+- baseline and optimized kernel implementations
+- performance exploration with different GPU configurations
+- <details open>
   <summary>
   <strong>load-balanced boundary updates using cyclic thread assignment</strong>
   </summary>
@@ -112,10 +115,6 @@ CUDA Implementation
   GPU threads are naturally 2D-indexed, but boundary updates (in `updateBoundaryNSKernel()` and `updateBoundaryEWKernel()`) operate in 1D. To better utilize threads, we map 2D thread indices to a 1D index and assign boundary updates cyclically across threads.
   ![gpu-boundary-lb](images/gpu-boundary-lb.png)
 </details>
-
-- static grid and block size tuning
-- baseline and optimized kernel implementations
-- performance exploration with different GPU configurations
 
 ## Performance Optimization
 
